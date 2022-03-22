@@ -6,3 +6,7 @@
 ``` pip install requests ```
 ``` pip install bs4 ```
 ``` pip install requests_cache ```
+
+### Run project
+
+``` py main.py ```
