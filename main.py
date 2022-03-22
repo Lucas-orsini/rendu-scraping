@@ -1,62 +1,6 @@
 
 import requests
 from bs4 import BeautifulSoup
-
-# page = r'https://www.imdb.com/chart/top/?ref_=nv_mv_250'
-#page = requests.get(page)
-
-#page = page.text
-
-#soup = BeautifulSoup(page, 'html.parser')＃
-
-#tbody = soup.find('tbody', class_='lister-list')
-
-#rows = tbody.find_all('tr')
-
-#for row in rows:
-    #title = row.find('td', class_='titleColumn').text
-    #rating = row.find('td', class_='ratingColumn imdbRating').text
-    #print(title, rating)
-
-#page = r'https://www.nike.com/fr/w/chaussures-y7ok?cp=25116780465_search_%7Csneakers%7C10583502915%7C104926141416%7Ce%7Cc%7CFR%7Cproducts%7C452748965429&gclsrc=aw.ds&ds_rl=1252249&gclid=CjwKCAjwxOCRBhA8EiwA0X8hi6TIJ8BAkcbGp2Hbho2dwQniCypg5My_MIrZ0X6bIEG-qgltgffM8hoClbgQAvD_BwE'
-#page = requests.get(page)
-
-#page = page.text
-
-#soup = BeautifulSoup(page, 'html.parser')
-
-#articles = soup.find('div' , class_='product-grid')
-#div = articles.find_all('div', class_='product-card')
-
-
-#for row in div :
-    #price = row.find('div', class_='product-price').text
-    #title= row.find('div', class_='product-card__title').text
-    #nb_color = row.find('div', class_='product-card__product-count').text
-    #print(price, title, nb_color)
-
-#for i in range(1, 25):
-    #r = requests.get('http://www.scrapethissite.com/pages/forms/?page_num=' + str(i))
-
-    #soup = BeautifulSoup(r.text, 'html.parser')
-
-    #results = soup.find('table', attrs={'class': 'table'})
-    #rows = results.find_all('tr', attrs={'class': 'team'})
-
-    #records = []
-    #for row in rows:
-        #name = row.find('td', attrs={'class': 'name'}).text.strip()
-        #year = row.find('td', attrs={'class': 'year'}).text.strip()
-        #wins = row.find('td', attrs={'class': 'wins'}).text.strip()
-        #losses = row.find('td', attrs={'class': 'losses'}).text.strip()
-        #ot_losses = row.find('td', attrs={'class': 'ot-losses'}).text.strip()
-        #gf = row.find('td', attrs={'class': 'gf'}).text.strip()
-        #ga = row.find('td', attrs={'class': 'ga'}).text.strip()
-        #records.append((name, year, wins, losses, ot_losses, gf, ga))
-
-    #print(records)
-
-
 import requests_cache
 requests_cache = requests_cache.install_cache('cache')
 
